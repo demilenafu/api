@@ -1,0 +1,170 @@
+body {
+    background-color: #CCC;
+    height: 100%;
+}
+
+html {
+height: 100%;
+width: 100%;
+}
+
+.circle {
+    width: 180px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto; 
+    position: absolute;
+    top:  -1px; 
+    left: -1px;
+}
+
+.t1 {
+    background-color: black;
+    position:relative;
+    margin:0 auto;
+    width:100%;
+}
+
+#header, #footer {
+        width:100%;
+        float:left;
+    }
+
+.description {
+    width: 50%;
+    position: absolute;
+    top:  32px; 
+    left: 200px;
+    color: gray;
+    font-size: 85%;
+    font-family: 'Poppins', sans-serif;
+    text-align: left !important;
+    
+    line-height: 1.5em;
+    height: 9em;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+.name {
+    position: absolute;
+    top:  1px; 
+    left: 200px;
+    font-size: 120%;
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left !important;
+    text-transform: uppercase;
+    font-weight:700;
+}
+
+.more {
+    position: absolute;
+    height: 40px;
+    border: 0px;
+    top:  140px; 
+    left: 200px;
+    font-size: 90%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left !important;
+    text-transform: uppercase;
+    font-weight:700;
+    background-color: red;
+}
+
+.title_related {
+    position: absolute;
+    height: 40px;
+    border: 0px;
+    top:  200px; 
+    left: 50px;
+    font-size: 110%;
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left !important;
+    font-weight:700;
+}
+
+.named_related {
+    background-color: white;
+    height: 250px;
+    font-size: 90%;
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left !important;
+    position: inherit;
+    top: 200px;
+    left: 20px;
+}
+
+input.lupa{
+    border: 0px;
+    width: 240px;
+    position: relative;
+    background-color: white: ;
+    outline: none;
+    bottom: 4px;
+    padding: 2px;
+    top: 10px;
+}
+
+input.image_buscar {
+    width: 34px;
+    border: 0px;
+    position: relative;
+    top: 10px;
+    background-color: white;
+}
+
+.cover {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-size: cover;  
+}
+
+.nombre {
+	text-align: center;
+	width: 180px;
+    display: inline-block;
+}
+
+.titulo {
+	font: bold 180% sans-serif;
+	vertical-align: bottom;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cover:hover {
+    cursor: pointer;
+}
+
+.cover.playing {
+    border: 12px solid #e45343;    
+}
+
+#resultados {
+    margin-top: 20px;
+    background-color: white;
+    height: 320px;
+}
+
+#favoritos {
+    margin-top: 20px;
+    color: #000;
+    background-color: green;
+}
+
+#login, #loggedin {
+    display: none;
+}
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 500px;
+}

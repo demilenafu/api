@@ -36,6 +36,15 @@ width: 100%;
         width:100%;
     }
 
+.grability {
+    height: 70px;
+    padding-left: 30%;
+    color: white;
+    font-size: 90%;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+}
+
 .header{
     padding-top: 10px;
     padding-bottom: 65px;
@@ -91,23 +100,21 @@ width: 100%;
     border: 0px;
     top:  200px; 
     left: 30px;
-    font-size: 110%;
+    font-size: 120%;
     color: gray;
     font-family: 'Montserrat', sans-serif;
     text-align: left !important;
-    font-weight:700;
+    font-weight:500;
 }
 
 .named_related {
     background-color: white;
-    font-size: 90%;
+    font-size: 95%;
     color: gray;
     font-family: 'Montserrat', sans-serif;
     text-align: left !important;
-    position: inherit;
-    top: 200px;
+    top: 205px;
     height: 3em;
-    width: 100%;
 
     display: block; /* Fallback for non-webkit */
     display: -webkit-box;
@@ -171,7 +178,7 @@ input.image_buscar {
 #resultados {
     margin-top: 20px;
     background-color: white;
-    height: 320px;
+    height: 334px;
 }
 
 #favoritos {
@@ -184,12 +191,71 @@ input.image_buscar {
     display: none;
 }
 
+.favorito{
+    background-color: #F4F4F4;
+    -webkit-box-shadow: inset 0px 5px 5px 0px #999;
+    -moz-box-shadow: inset 0px 5px 5px 0px #999;
+    box-shadow: inset 0px 13px 7px -100px #999;
+} 
+
 .container{
     background-color: #F4F4F4;
     -webkit-box-shadow: inset 0px 8px 5px 0px #999;
     -moz-box-shadow: inset 0px 8px 5px 0px #999;
-    box-shadow: inset 0px 8px 5px 0px #999;
+    box-shadow: inset 0px 5px 5px 0px #999;
 }    
+
+a { text-decoration: none; }
+a:link { color: gray; text-decoration: none }
+a:active { color: red; text-decoration: none }
+a:visited { color: gray; text-decoration: none }
+a:hover { color: red; text-decoration: none;
+    font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left !important;
+    margin: 3px 3px 3px 3px !important;
+    }
+a:hover:before { content: url("../icons/link-arrow.png");padding: 1px 3px;}
+
+
+
+
+
+#vmodal { 
+  background-color: transparent;
+  color: #fff;
+  position: fixed;
+  top:0;
+  left:-500px;
+  width:500px;
+  height: 500px;
+  transition: all .5s;
+  font-family:'Roboto';
+
+}
+#vmodal:target{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  left:0;
+}
+.cerrar{
+  display:flex;
+  position:absolute;
+  top:0;
+  right:0;
+  padding:.5em;
+  background-color: tomato;
+  color:#ccc;
+  text-decoration:none;
+  font-size:.7em;
+  box-sizing:border-box;
+}
+.parrafo{
+  width:70%;
+  text-align:justify;
+}
+
 
 
 

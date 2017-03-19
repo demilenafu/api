@@ -58,36 +58,27 @@
                     </tbody>
                 </table>
             </div>
-      </div>
-
-  	<div class="container">  
-        <div class="col-xs-12">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6" style="margin-top: 15px; !important;">
-                    <p></p>
-                    <img src="icons/characters.png" width="40" height="40">
-                    <label class="titulo">Characters</label>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    
-                </div>
-            </div>
-        	
-        </div>
-        <div class="col-xs-12">
-            <div class="row">
-                <div class="col-xs-12 col-sm-9">
-                    <div id="resultados" style="background-color: transparent">                   
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-3">
-                    <div id="favoritos">                   
-                    </div>
-                </div>
-            </div>
         </div>
 
-    </div>
+      	<div class="container">  
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-9" style="margin-top: 15px; !important;">
+                        <p></p>
+                        <img src="icons/characters.png" width="40" height="40">
+                        <label class="titulo">Characters</label>
+                        <div id="resultados" style="background-color: transparent">                   
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 favorito" style="background-color: #EBEBEB; height: 1910px;">
+                        <div id="favoritos">                   
+                        </div>
+                    </div>
+                </div>
+            	
+            </div>
+
+        </div>
 
     <!-- Handeblars JS -->
     <script src="js/handlebars-v4.0.0.js" type="text/javascript"></script>    
@@ -112,85 +103,46 @@
                             Related comics
                         </span>
                         {{#each comics.items}}
-                        <div class="col-xs-6 col-sm-6">
-                                <span class="named_related" style="margin-top: 5px; margin-bottom: 5px; !important">
-                                    {{name}}
-                                </span>
-                                
+                        <div class="col-xs-6 col-sm-6 named_related" style="margin-top: 5px; margin-bottom: 5px; !important">
+                            
+                            <span>
+                                <a href="#vmodal" id="myBtn">{{name}}</a>
+                                <div id="vmodal" >
+                                    <a class="cerrar" href="#cerrar">X</a>
+                                    <p class="parrafo">{{name}}</p>
+                                </div>
+                            </span>
+                            
                         </div>
+
                         {{/each}}
                     </div>
-                    <div class="clear"></div>
+                    
                 </div>
             </div>
         {{/each}}
 
 
     </script>
+
     <script src="js/buscar.js" type="text/javascript"></script>
+
     <!-- Fin Handeblars JS -->
 
 
-
-
-    <button id="myBtn">Open Modal</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div>
-
-
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
-
-
-
-
-    <div class="footer">
+    <div class="footer" >
         <div class="col-xs-12 col-sm-12">
             <table class="t1">
                 <tbody>
                     <tr>
                         <td>
-                            <div style="width: 500px; align-items: right">
+                            <div class="grability">
                                 Grability 2016 - Todos los derechos reservados
                             </div>
                         </td>
                         <td>
                             <div style="padding-left: 210px">
-                                   <img src="img/grability-logo.png" width="40" height="40">
+                                   <img src="img/grability-logo.png" width="50" height="50">
                             </div>                         
                         </td>
                     </tr>

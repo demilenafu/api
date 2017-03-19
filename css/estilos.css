@@ -1,5 +1,5 @@
 body {
-    background-color: #CCC;
+    background-color: black;
     height: 100%;
 }
 
@@ -9,8 +9,8 @@ width: 100%;
 }
 
 .circle {
-    width: 180px;
-    height: 180px;
+    width: 190px;
+    height: 190px;
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 50%;
@@ -18,6 +18,11 @@ width: 100%;
     position: absolute;
     top:  -1px; 
     left: -1px;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.p1 {
+    top: 10px;
 }
 
 .t1 {
@@ -27,18 +32,23 @@ width: 100%;
     width:100%;
 }
 
-#header, #footer {
+#footer {
         width:100%;
-        float:left;
     }
 
+.header{
+    padding-top: 10px;
+    padding-bottom: 65px;
+    width:100%;
+}
+
 .description {
-    width: 50%;
+    width: 45%;
     position: absolute;
-    top:  32px; 
+    top:  36px; 
     left: 200px;
     color: gray;
-    font-size: 85%;
+    font-size: 88%;
     font-family: 'Poppins', sans-serif;
     text-align: left !important;
     
@@ -50,10 +60,10 @@ width: 100%;
 
 .name {
     position: absolute;
-    top:  1px; 
+    top:  -9px; 
     left: 200px;
     font-size: 120%;
-    color: gray;
+    color: #483E3D;
     font-family: 'Montserrat', sans-serif;
     text-align: left !important;
     text-transform: uppercase;
@@ -62,17 +72,17 @@ width: 100%;
 
 .more {
     position: absolute;
-    height: 40px;
+    height: 30px;
     border: 0px;
-    top:  140px; 
+    top:  155px; 
     left: 200px;
-    font-size: 90%;
+    font-size: 80%;
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-align: left !important;
     text-transform: uppercase;
     font-weight:700;
-    background-color: red;
+    background-color: #EC1D23;
 }
 
 .title_related {
@@ -80,7 +90,7 @@ width: 100%;
     height: 40px;
     border: 0px;
     top:  200px; 
-    left: 50px;
+    left: 30px;
     font-size: 110%;
     color: gray;
     font-family: 'Montserrat', sans-serif;
@@ -90,14 +100,20 @@ width: 100%;
 
 .named_related {
     background-color: white;
-    height: 250px;
     font-size: 90%;
     color: gray;
     font-family: 'Montserrat', sans-serif;
     text-align: left !important;
     position: inherit;
     top: 200px;
-    left: 20px;
+    height: 3em;
+    width: 100%;
+
+    display: block; /* Fallback for non-webkit */
+    display: -webkit-box;
+    margin: 0 auto;
+    overflow:hidden;
+    text-overflow: ellipsis;
 }
 
 input.lupa{
@@ -109,13 +125,18 @@ input.lupa{
     bottom: 4px;
     padding: 2px;
     top: 10px;
+    font-size: 100%;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left !important;
 }
 
 input.image_buscar {
-    width: 34px;
+    width: 50px;
     border: 0px;
     position: relative;
     top: 10px;
+    height: 50px;
     background-color: white;
 }
 
@@ -136,6 +157,7 @@ input.image_buscar {
 	font: bold 180% sans-serif;
 	vertical-align: bottom;
     font-family: 'Montserrat', sans-serif;
+    color: #483E3D;
 }
 
 .cover:hover {
@@ -162,9 +184,51 @@ input.image_buscar {
     display: none;
 }
 
-.text-overflow {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 500px;
+.container{
+    background-color: #F4F4F4;
+    -webkit-box-shadow: inset 0px 8px 5px 0px #999;
+    -moz-box-shadow: inset 0px 8px 5px 0px #999;
+    box-shadow: inset 0px 8px 5px 0px #999;
+}    
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }

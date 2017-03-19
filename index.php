@@ -38,8 +38,8 @@
                     <tbody>
                         <tr>
                             <td>
-                                <div style="width: 100px; align-items: left">
-                                    <img src="img/marvel.png" width="80" height="36">
+                                <div style="padding-left: 70%; width: 100px; align-items: left">
+                                    <img src="img/marvel.png" width="130">
                                 </div>
                             </td>
                             <td>
@@ -47,7 +47,7 @@
                                     <form id="search-form" role="form">
                                         <div class="form-group">
                                             <div class="input-group">
-                                                <input placeholder="Search character..." style="width: 450px;" class="form-control lupa" type="text" id="query">
+                                                <input placeholder="Search character..." style="padding-left: 3%; width: 450px;" class="form-control lupa" type="text" id="query">
                                                 <input type="image" src="icons/search.png" class="image_buscar">
                                             </div>
                                         </div>
@@ -60,13 +60,10 @@
             </div>
       </div>
 
-  	<div class="container">
-		
-            
-        
+  	<div class="container">  
         <div class="col-xs-12">
             <div class="row">
-                <div class="col-xs-12 col-sm-6">
+                <div class="col-xs-12 col-sm-6" style="margin-top: 15px; !important;">
                     <p></p>
                     <img src="icons/characters.png" width="40" height="40">
                     <label class="titulo">Characters</label>
@@ -79,11 +76,11 @@
         </div>
         <div class="col-xs-12">
             <div class="row">
-                <div class="col-xs-12 col-sm-10">
+                <div class="col-xs-12 col-sm-9">
                     <div id="resultados" style="background-color: transparent">                   
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-2">
+                <div class="col-xs-12 col-sm-3">
                     <div id="favoritos">                   
                     </div>
                 </div>
@@ -98,7 +95,7 @@
         {{#each data.results}}
 
             <div class="col-xs-12 col-sm-6">
-                <div id="resultados">  
+                <div id="resultados" style="margin-top: 10px; margin-bottom: 20px; !important; overflow: hidden;">  
 
                     <div style="background-image:url('{{thumbnail.path}}/standard_amazing.jpg')" data-character-id="{{id}}" class="circle">               
                     </div>
@@ -116,20 +113,70 @@
                         </span>
                         {{#each comics.items}}
                         <div class="col-xs-6 col-sm-6">
-                            <span class="named_related">
-                                {{name}}
-                            </span>
+                                <span class="named_related" style="margin-top: 5px; margin-bottom: 5px; !important">
+                                    {{name}}
+                                </span>
+                                
                         </div>
                         {{/each}}
                     </div>
                     <div class="clear"></div>
                 </div>
             </div>
-                
         {{/each}}
+
+
     </script>
     <script src="js/buscar.js" type="text/javascript"></script>
     <!-- Fin Handeblars JS -->
+
+
+
+
+    <button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
 
     <div class="footer">
         <div class="col-xs-12 col-sm-12">
@@ -151,6 +198,5 @@
             </table>
         </div>
     </div>
-
   </body>
 </html>

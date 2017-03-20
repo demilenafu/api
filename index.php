@@ -71,7 +71,38 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-3 favorito" style="background-color: #EBEBEB; height: 1910px;">
-                        <div id="favoritos">                   
+                        <div id="favoritos" style="margin-top: 25px; !important;">      
+                           <p></p>
+                            <img src="icons/favourites.png" width="40" height="40">
+                            <label class="titulo" style="margin-left: 5%">My Favourites</label>  
+                            <div class="fav-1">
+                                <img src="icons/btn-delete.png" class="del">
+                                <img src="http://i.annihil.us/u/prod/marvel/i/mg/a/30/4e9492b596bde/portrait_incredible.jpg">
+                                <p class="tfav-1">
+                                Avengers: The Initiative (2007) #14
+                                </p>
+                            </div> 
+                            <div class="fav-1">
+                                <img src="icons/btn-delete.png" class="del1">
+                                <img src="http://i.annihil.us/u/prod/marvel/i/mg/4/40/5835df48d6725/portrait_incredible.jpg">
+                                <p class="tfav-1">
+                                Punisher War Journal (2006) #23
+                                </p>
+                            </div>
+                            <div class="fav-1">
+                                <img src="icons/btn-delete.png" class="del2">
+                                <img src="http://i.annihil.us/u/prod/marvel/i/mg/c/20/4bb6d2bdb1947/portrait_incredible.jpg">
+                                <p class="tfav-1">
+                                Ender's Game Poster (2008) #1
+                                </p>
+                            </div>
+                            <div class="fav-1">
+                                <img src="icons/btn-delete.png" class="del3">
+                                <img src="http://i.annihil.us/u/prod/marvel/i/mg/d/a0/586c237605228/portrait_incredible.jpg">
+                                <p class="tfav-1">
+                                Spider-Man Loves Mary Jane (2008) #3
+                                </p>
+                            </div>        
                         </div>
                     </div>
                 </div>
@@ -108,8 +139,15 @@
                             <span>
                                 <a href="#vmodal" id="myBtn">{{name}}</a>
                                 <div id="vmodal" >
-                                    <a class="cerrar" href="#cerrar">X</a>
-                                    <p class="parrafo">{{name}}</p>
+                                    
+                                    <a class="cerrar" href="#cerrar"><img src="icons/btn-close.png" class="cerrar"></a>
+                                    <div class="mod-1"><img src="http://i.annihil.us/u/prod/marvel/i/mg/d/a0/586c237605228/portrait_incredible.jpg"></div>
+                                    <p class="mod-2">Spider-Man Loves Mary Jane (2008) #3</p>
+                                    <p class="parrafo">Eisner award-winner Terry Moore returns with another exciting issue starring Spider-Man's favorite girl! Someone at Midtown High is leading a double life...but it ain't who you'd expect. Can MJ conceal her secret identity from her closest friends, or will her double life be revealed to the entire school!?!?!? (Hint: Her double life will be revealed to the entire school)\r<br>All Ages...$2.99\r<br></p>
+                                    <div class="but">
+                                        <button class="add">Add</button>
+                                        <button class="buy">Buy 2.99</button>
+                                    </div>
                                 </div>
                             </span>
                             

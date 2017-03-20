@@ -278,7 +278,6 @@ a:hover:before { content: url("../icons/link-arrow.png");padding: 1px 3px;}
     left: -1000px;
     width: 800px;
     height: 500px;
-    transition: all .5s;
     font-family:'Roboto';
     margin-top: 100px;
     margin-left: 200px;
@@ -306,7 +305,7 @@ a:hover:before { content: url("../icons/link-arrow.png");padding: 1px 3px;}
 
 .mod-1{
     margin-left: 5%;
-    margin-top: -15%;
+    margin-top: -26%;
 }
 
 .mod-2 {
@@ -314,10 +313,10 @@ a:hover:before { content: url("../icons/link-arrow.png");padding: 1px 3px;}
     vertical-align: bottom;
     font-family: 'Montserrat', sans-serif;
     color: #483E3D;
-    margin-top: -72%;
+    margin-top: -41%;
     text-transform: uppercase;
     width: 100%;
-    margin-left: 3%;
+    margin-left: 36%;
 }
 
 .parrafo {
@@ -325,20 +324,37 @@ a:hover:before { content: url("../icons/link-arrow.png");padding: 1px 3px;}
     vertical-align: bottom;
     font-family: 'Montserrat', sans-serif;
     color: #483E3D;
-    margin-top: -40%;
-    width: 100%;
-    margin-left: -65%;
+    margin-top: 3%;
+    width: 60%;
+    margin-left: 36%;
     position: initial;
 }
 
 .add {
-    position: relative;
+    margin-top: 16%;
+    position: fixed;
+    width: 30%;
+    height: 10%;
+    background-color: #F4F4F4;
+    font: bold 100% sans-serif;
+    vertical-align: bottom;
+    font-family: 'Montserrat', sans-serif;
+    color: #483E3D;
 }
 
 .buy {
-    position: relative;
+    margin-top: 16%;
+    position: fixed;
+    width: 30%;
+    height: 10%;
+    margin-left: 29.4%;
+    background-color: #DCDCDC;
+    font: bold 100% sans-serif;
+    vertical-align: bottom;
+    font-family: 'Montserrat', sans-serif;
+    color: #483E3D;
 }
 
 .but {
-    position: inherit;
+
 }

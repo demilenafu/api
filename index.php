@@ -141,12 +141,13 @@
                                 <div id="vmodal" >
                                     
                                     <a class="cerrar" href="#cerrar"><img src="icons/btn-close.png" class="cerrar"></a>
-                                    <div class="mod-1"><img src="http://i.annihil.us/u/prod/marvel/i/mg/d/a0/586c237605228/portrait_incredible.jpg"></div>
-                                    <p class="mod-2">Spider-Man Loves Mary Jane (2008) #3</p>
-                                    <p class="parrafo">Eisner award-winner Terry Moore returns with another exciting issue starring Spider-Man's favorite girl! Someone at Midtown High is leading a double life...but it ain't who you'd expect. Can MJ conceal her secret identity from her closest friends, or will her double life be revealed to the entire school!?!?!? (Hint: Her double life will be revealed to the entire school)\r<br>All Ages...$2.99\r<br></p>
                                     <div class="but">
-                                        <button class="add">Add</button>
-                                        <button class="buy">Buy 2.99</button>
+                                        <div class="mod-1"><img src="http://i.annihil.us/u/prod/marvel/i/mg/d/a0/586c237605228/portrait_incredible.jpg"></div>
+                                        <p class="mod-2">Spider-Man Loves Mary Jane (2008) #3</p>
+                                        <p class="parrafo">Eisner award-winner Terry Moore returns with another exciting issue starring Spider-Man's favorite girl! Someone at Midtown High is leading a double life...but it ain't who you'd expect. Can MJ conceal her secret identity from her closest friends, or will her double life be revealed to the entire school!?!?!? (Hint: Her double life will be revealed to the entire school)\r<br>All Ages...$2.99\r<br></p>
+
+                                        <button class="add"><img src="icons/btn-favourites-default.png" width="40" height="40" style="margin-right: 3%">ADD TO FAVOURITES</button>
+                                        <button class="buy"><img src="icons/shopping-cart-primary.png" width="40" height="40" style="margin-right: 3%">BUY FOR 2.99</button>
                                     </div>
                                 </div>
                             </span>

@@ -128,8 +128,6 @@
     <script src="js/buscar.js" type="text/javascript"></script>
 
     <!-- Fin Handeblars JS -->
-
-
     <div class="footer" >
         <div class="col-xs-12 col-sm-12">
             <table class="t1">

@@ -196,6 +196,7 @@ input.image_buscar {
     -webkit-box-shadow: inset 0px 5px 5px 0px #999;
     -moz-box-shadow: inset 0px 5px 5px 0px #999;
     box-shadow: inset 0px 13px 7px -100px #999;
+    position: inherit;
 } 
 
 .container{
@@ -222,18 +223,21 @@ a:hover:before { content: url("../icons/link-arrow.png");padding: 1px 3px;}
 
 
 #vmodal { 
-  background-color: transparent;
-  color: #fff;
+  background-color: #fff;
+  color: black;
   position: fixed;
-  top:0;
-  left:-500px;
-  width:500px;
+  top: 10px;
+  left: -1000px;
+  width: 800px;
   height: 500px;
   transition: all .5s;
   font-family:'Roboto';
-
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 100px;
 }
 #vmodal:target{
+    position: fixed;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -259,42 +263,3 @@ a:hover:before { content: url("../icons/link-arrow.png");padding: 1px 3px;}
 
 
 
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-
-/* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
